@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>indexpage</title>
+  <!-- script -->
+  <script src="./index/js/jquery-3.7.1.js"></script>
+  <script src="./index/js/script.js" defer></script>
+  <!-- css -->
+  <link rel="stylesheet" href="./index/css/reset.css">
+  <link rel="stylesheet" href="./index/css/style.css">
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="header_area">
+      <div class="container">
+        <a href="#none" id="hamburger"><span></span><span></span></a>
+        <ul class="main_menu">
+          <li class="en"><a href="./index.html" class="menu">home</a></li>
+          <li class="en"><a href="./about.html" class="menu">about</a></li>
+          <li class="en"><a href="./work.html" class="menu">work</a></li>
+          <li class="en"><a href="./process.html" class="menu">process</a></li>
+        </ul>
+        <a href="#" class="logo">
+          <img src="./index/img/logo.svg" alt="로고 이미지">
+        </a>
+      </div>
+    </header>
+    <section class="section1">
+      <div class="container">
+        <div class="textLoop">
+          <ul>
+            <li>Responsible Publisher Seungyun</li>
+            <li>Responsible Publisher Seungyun</li>
+            <li>Responsible Publisher Seungyun</li>
+            <li>Responsible Publisher Seungyun</li>
+            <li>Responsible Publisher Seungyun</li>
+          </ul>
+        </div>
+        <div class="text-box">
+          <div class="left-txt-box en">
+            <h1 class="first">HELLO</h1>
+            <div class="sec_1_wrap">
+              <h1 class="en">WELCOME TO</h1>
+              <div class="right-txt-box en">
+                <ul class="en">
+                  <li class="s1">
+                    <h1>SEUNGYUN</h1>
+                  </li>
+                  <li class="s2">
+                    <h1 class="slide2">
+                      <img src="./index/img/slide2.png" alt="glasschar이미지">
+                    </h1>
+                  </li>
+                  <li class="s3">
+                    <h1>
+                      <img src="./index/img/slide3.png" alt="나의 사진">
+                    </h1>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h1 class="third">PORTFOLIO</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section2 -->
+    <section class="section2">
+      <div class="container">
+        <div class="textBox">
+          <span class="mask">
+            <span class="text">
+              <span class="en">Responsible Publisher</span><br>
+              안녕하세요 책임감있는 퍼블리셔 신승윤입니다.<br>
+              저의 첫번째 포트폴리오를 읽어주셔서 감사합니다.<br>
+            </span>
+          </span>
+        </div>
+      </div>
+    </section>
+    <!-- section3 -->
+    <section class="section3">
+      <div class="container">
+        <h3 class="about_me">다섯개의 <span>사진을 클릭해</span> 저에 대해 알아가 주세요!</h3>
+        <div class="tab_inner">
+          <!-- 탭영역 -->
+          <div class="tabs">
+            <div data-tab="tab1" class="box tab-img1 active"><a href="#"><img src="./index/img/tab1.jpg"
+                  alt="탭이미지1"></a>
+            </div>
+            <div data-tab="tab2" class="box tab-img2"><a href="#"><img src="./index/img/tab2.jpg" alt="탭이미지2"></a></div>
+            <div data-tab="tab3" class="box tab-img3"><a href="#"><img src="./index/img/tab3.jpg" alt="탭이미지3"></a></div>
+            <div data-tab="tab4" class="box tab-img4"><a href="#"><img src="./index/img/tab4.png" alt="탭이미지4"></a></div>
+            <div data-tab="tab5" class="box tab-img5"><a href="#"><img src="./index/img/tab5.jpg" alt="탭이미지5"></a></div>
+            <!-- 탭 내용이 들어가는 영역 -->
+            <div id="tab1" class="con active">
+              <div class="tab-wrap">
+                <div class="tab_imgbox1 tab-image">
+                  <img src="./index/img/tab1.jpg" alt="">
+                  <h1 class="en header_txt">I'M Seungyun</h1>
+                </div>
+                <div class="tab-txt">
+                  <div class="tab-txt-con1">
+                    <h3 class="en sub_title">PROFILE</h3>
+                    <p>신승윤</p>
+                    <p>1998.07.11</p>
+                    <p>경기도 고양시 덕양구</p>
+                    <p>010 5027 6509</p>
+                  </div>
+                  <div class="tab-txt-con2">
+                    <h3 class="en sub_title">Interest</h3>
+                    <p class="en">Fitness</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab2" class="con">
+              <div class="tab-wrap">
+                <div class="tab_imgbox2 tab-image">
+                  <img src="./index/img/tab2.jpg" alt="">
+                  <h1 class="en header_txt">MY Goal</h1>
+                </div>
+                <div class="tab-txt">
+                  <div class="tab-txt-con1">
+                    <h3 class="en sub_title">"Responsible"</h3>
+                    <p>책임감있게 수행하라라는 좌우명을 가지고 이전 회사에서부터 책임감을 가지고 맡은 역할을 성실히 수행하며 신뢰를 쌓았습니다.
+                      새롭게 도전하는 웹퍼블리셔라는 직업에서도 책임감을 바탕으로 역할을 충실히 수행하여 인정받는 신인 웹퍼블리셔가 되겠습니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab3" class="con">
+              <div class="tab-wrap">
+                <div class="tab_imgbox3 tab-image">
+                  <img src="./index/img/tab3.jpg" alt="">
+                  <h1 class="en header_txt">SKILLS</h1>
+                </div>
+                <div class="tab-txt">
+                  <div class="tab-txt-con1 tab3_wrap">
+                    <h3 class="en sub_title">Publishing</h3>
+                    <ul>
+                      <li><img src="./index/img/html.png" alt="html로고"></li>
+                      <li><img src="./index/img/CSS.png" alt="css로고"></li>
+                      <li><img src="./index/img/JS.png" alt="js로고"></li>
+                      <li><img src="./index/img/Jq.png" alt="jq로고"></li>
+                      <li><img src="./index/img/vscode.png" alt="vs로고"></li>
+                    </ul>
+                  </div>
+                  <div class="tab-txt-con2 tab3_wrap">
+                    <h3 class="en sub_title">Design</h3>
+                    <ul>
+                      <li><img src="./index/img/photoshop.png" alt="photoshop로고"></li>
+                      <li><img src="./index/img/figma.png" alt="figma로고"></li>
+                    </ul>
+                  </div>
+                  <div class="tab-txt-con3 tab3_wrap">
+                    <h3 class="en sub_title">Document</h3>
+                    <ul>
+                      <li><img src="./index/img/excel.png" alt="excel로고"></li>
+                      <li><img src="./index/img/power.png" alt="power로고"></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab4" class="con">
+              <div class="tab-wrap">
+                <div class="tab_imgbox4 tab-image">
+                  <img src="./index/img/tab4.png" alt="">
+                  <h1 class="header_txt en">Experience</h1>
+                </div>
+                <div class="tab-txt">
+                  <div class="tab-txt-con1">
+                    <h3 class="sub_title">Education</h3>
+                    <p>중부대학교 게임소프트웨어학과</p>
+                    <p>웹 UI/UX & 프론트앤드 교육</p>
+                  </div>
+                  <div class="tab-txt-con2">
+                    <h3 class="sub_title">Work</h3>
+                    <P>동인전기공엽 Production Management</P>
+                    <p>다양한 사람들과의 교류를 통해
+                      상대방의 의도를 빠르게 파악하고,
+                      상황에 맞는 적절한 소통 능력을 갖추고 있습니다.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab5" class="con">
+              <div class="tab-wrap">
+                <div class="tab_imgbox5 tab-image">
+                  <img src="./index/img/tab5.jpg" alt="">
+                  <h1 class="header_txt en">Strength</h1>
+                </div>
+                <div class="tab-txt">
+                  <div class="tab-txt-con1">
+                    <h3 class="en sub_title">Personality</h3>
+                    <p>밝고 긍정적인 마인드</p>
+                  </div>
+                  <div class="tab-txt-con2">
+                    <h3 class="en sub_title">Co-Work</h3>
+                    <p>협업 경험과 유연한 소통</p>
+                  </div>
+                  <div class="tab-txt-con3">
+                    <h3 class="en sub_title">Tendency</h3>
+                    <p>책임감있는 성향</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btnWrap">
+          <a href="./about.html" class="btnimg">
+            <img src="./index/img/readMore1.png" alt="버튼1">
+            <img src="./index/img/readMore2.png" alt="버튼2">
+          </a>
+          <a href="./about.html" class="view">view all-></a>
+        </div>
+      </div>
+    </section>
+    <!-- section4 -->
+    <section class="section4">
+      <div class="container">
+        <h1 class="en title">Recent Work</h1>
+        <div class="txt-wrap">
+          <p>최근 작업물을 소개 해 드립니다.</p>
+          <p><span>화살표를 클릭</span>해서 더 많은 작업물을 살펴보세요.</p>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./index/img/project1.png" alt="프로젝트1">
+
+              <h1 class="po_title en">Lemaire</h1>
+            </div>
+            <div class="swiper-slide">
+              <img src="./index/img/project2.png" alt="프로젝트2">
+
+              <h1 class="po_title en">Hanwha</h1>
+            </div>
+            <div class="swiper-slide">
+              <img src="./index/img/project3.png" alt="프로젝트3">
+
+              <h1 class="po_title">Dunst</h1>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="btnWrap">
+          <a href="./work.html" class="btnimg">
+            <img src="./index/img/readMore1.png" alt="버튼1">
+            <img src="./index/img/readMore2.png" alt="버튼2">
+          </a>
+          <a href="./work.html" class="view">view all-></a>
+        </div>
+      </div>
+    </section>
+    <!-- section5 -->
+    <section class="section5">
+      <div class="container">
+        <!-- 카운트 제작 -->
+        <h1 class="en title">Portpolio Process</h1>
+        <div class="counter en">
+          <span class="now"></span>
+          <span class="all en2">/ 7</span>
+        </div>
+        <ul>
+          <li>
+            <a href="#">
+              <div class="num" data-text='1'></div>
+              <div class="imgBox">
+                <img src="./index/img/process1.jpg" alt="프로세스1">
+              </div>
+              <div class="textBox">
+                <p class="name en">Brainstorming</p>
+                <p class="text">“나”와 “포트폴리오”에 대해 떠오르는 생각들을 자유롭게 표현하였습니다.</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="num" data-text='2'></div>
+              <div class="imgBox">
+                <img src="./index/img/process2.png" alt="프로세스2">
+              </div>
+              <div class="textBox">
+                <p class="name en">Reference</p>
+                <p class="text en2">포트폴리오를 작업하고 디자인하는데 영감을 준 래퍼런스입니다.</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="num" data-text='3'></div>
+              <div class="imgBox">
+                <img src="./index/img/process3.png" alt="프로세스3">
+              </div>
+              <div class="textBox">
+                <p class="name en">Deconstructing interaction</p>
+                <p class="text en2">사이트 구조도를 작성하였습니다.</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="num" data-text='4'></div>
+              <div class="imgBox">
+                <img src="./index/img/process4.png" alt="프로세스4">
+              </div>
+              <div class="textBox">
+                <p class="name en">Idea skectch</p>
+                <p class="text en2">포트폴리오를 어떻게 구상하고 싶은지 떠오르는 아이디어를 자유롭게 표현하였습니다.</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="num" data-text='5'></div>
+              <div class="imgBox">
+                <img src="./index/img/process5.png" alt="프로세스5">
+              </div>
+              <div class="textBox">
+                <p class="name en">Style Guide</p>
+                <p class="text en2">스타일 가이드를 작성하였습니다.</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="num" data-text='6'></div>
+              <div class="imgBox">
+                <img src="./index/img/process6.png" alt="프로세스6">
+              </div>
+              <div class="textBox">
+                <p class="name en">Wire frame</p>
+                <p class="text en2">각페이지마다 정확한 구도를 잡고 어떤 내용을 넣을지 정했습니다.</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="num" data-text='7'></div>
+              <div class="imgBox">
+                <img src="./index/img/process7.png" alt="프로세스7">
+              </div>
+              <div class="textBox">
+                <p class="name en">Coding</p>
+                <p class="text en2">포트폴리오 전체페이지를 직접 코딩하여 제작했습니다.</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="btnWrap">
+          <a href="./process.html" class="btnimg">
+            <img src="./index/img/readMore1.png" alt="버튼1">
+            <img src="./index/img/readMore2.png" alt="버튼2">
+          </a>
+          <a href="./process.html" class="view">view all-></a>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-contact">
+          <h1 class="f_title">thank you for reviewing my portfolio!</h1>
+          <h3 class="en">Contact</h3>
+          <div class="footer-contact-info">
+            <p class="en">sstmddbs@naver.com</p>
+            <p class="en">010-5027-6509</p>
+          </div>
+        </div>
+        <div class="footer-navigation">
+          <h1 class="en footer-title">Site Stuff</h1>
+          <ul>
+            <li><a href="./index.html">home</a></li>
+            <li><a href="./about.html">about</a></li>
+            <li><a href="./work.html">work</a></li>
+            <li><a href="./process.html">process</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

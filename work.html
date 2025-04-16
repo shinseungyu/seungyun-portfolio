@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>workpage</title>
+  <!-- css -->
+  <link rel="stylesheet" href="./work/css/reset.css">
+  <link rel="stylesheet" href="./work/css/style.css">
+  <!-- script -->
+  <script src="./work/script/jquery-3.7.1.js"></script>
+  <script src="./work/script/script.js" defer></script>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+  <script src='https://unpkg.com/gsap/dist/Observer.min.js'></script>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="header_area">
+      <div class="container">
+        <a href="#none" id="hamburger"><span></span><span></span></a>
+        <!-- 메인메뉴 -->
+        <ul class="main_menu">
+          <li><a href="./index.html" class="menu">home</a></li>
+          <li><a href="./about.html" class="menu">about</a></li>
+          <li><a href="./work.html" class="menu">work</a></li>
+          <li><a href="./process.html" class="menu">process</a></li>
+        </ul>
+        <a href="#" class="logo">
+          <!-- 로고 넣기 -->
+          <img src="./work/img/logo.svg" alt="메인로고">
+        </a>
+      </div>
+    </header>
+    <!-- section1 -->
+    <section class="section1">
+      <div class="container">
+        <div class="title">
+          <h1 class="a en">GALLERY<span>seung</span></h1>
+          <h1 class="b en">OF WORK<span>yun</span></h1>
+        </div>
+      </div>
+    </section>
+    <!-- section2  -->
+    <section class="section2">
+      <div class="container">
+        <div class="title">
+          <h1 class="en" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-offset="100"
+            data-aos-duration="500">UI/UX</h1>
+          <h1 class="en" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-offset="100"
+            data-aos-duration="500">Design</h1>
+        </div>
+        <div class="main-box">
+          <h1 class="box-title">UI/UX Design</h1>
+          <div class="top-box hover-box">
+            <div class="sec2-text-box">
+              <div class="uiux-logo">
+                <img src="./work/img/uiuxlogo.png" alt="uiuxlogo">
+              </div>
+              <h1>달나라 앱<br>팀 프로젝트</h1>
+              <div class="top-bottom-txt">
+                <div class="txt-left-box">
+                  <h3>PROJECT.</h3>
+                  <p>건강관리어플 달나라 UIUX 디자인</p>
+                  <p>Team Project</p>
+                </div>
+                <div class="txt-right-box">
+                  <h3>PERIOD.</h3>
+                  <p>2024. 02 - 2024. 02</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="middle-box">
+            <div class="middle-left hover-box"></div>
+            <div class="middle-right hover-box"></div>
+          </div>
+          <div class="bottom-box hover-box"></div>
+          <div class="button-wrap">
+            <a href="https://www.figma.com/design/StCy1Ikr5bLQQlodTHuXkL/%EB%8B%AC%EB%82%98%EB%9D%BC?node-id=0-1&t=ZS8g1VBRR6zxEDbe-1"
+              class="button">자세히 보기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section3 -->
+    <section class="section3">
+      <div class="container">
+        <div class="sec3-title">
+          <h1 class="en"><span>Web</span><br><span>Coding</span></h1>
+        </div>
+        <div class="wrap-box">
+          <div class="left-con">
+            <div class="left-txt">
+              <h1>Web<br> Coding</h1>
+            </div>
+          </div>
+          <div class="right-con">
+            <div class="project-box">
+              <a href="https://shinseungyu.github.io/dunst/" class="sub-img">
+                <img src="./work/img/project4.png" alt="던스트 메인 이미지">
+              </a>
+              <div class="sec3-bottom-box">
+                <ul>
+                  <li><a href="https://shinseungyu.github.io/dunst/" class="open-window" data-width="1920"
+                      data-height="1080">PC/</a></li>
+                  <li><a href="https://shinseungyu.github.io/dunst/" class="open-window" data-width="1024"
+                      data-height="768">Tablet/</a></li>
+                  <li><a href="https://shinseungyu.github.io/dunst/" class="open-window" data-width="375"
+                      data-height="812">Mobile</a></li>
+                </ul>
+                <h3 class="en">Dunst</h3>
+              </div>
+            </div>
+            <div class="project-box">
+              <a href="https://shinseungyu.github.io/Lemaire_2/" class="sub-img">
+                <img src="./work/img/project5.png" alt="르메르2 메인 이미지">
+              </a>
+              <div class="sec3-bottom-box">
+                <ul>
+                  <li><a href="https://shinseungyu.github.io/Lemaire_2/" class="open-window" data-width="1920"
+                      data-height="1080">PC/</a></li>
+                  <li><a href="https://shinseungyu.github.io/Lemaire_2/" class="open-window" data-width="1024"
+                      data-height="768">Tablet/</a></li>
+                  <li><a href="https://shinseungyu.github.io/Lemaire_2/" class="open-window" data-width="375"
+                      data-height="812">Mobile</a></li>
+                </ul>
+                <h3 class="en">Lemaire</h3>
+              </div>
+            </div>
+            <div class="project-box">
+              <a href="https://shinseungyu.github.io/Hanwha-/" class="sub-img">
+                <img src="./work/img/project6.png" alt="한화 메인 이미지">
+              </a>
+              <div class="sec3-bottom-box">
+                <ul>
+                  <li><a href="https://shinseungyu.github.io/Hanwha-/" class="open-window" data-width="1920"
+                      data-height="1080">PC/</a></li>
+                  <li><a href="https://shinseungyu.github.io/Hanwha-/" class="open-window" data-width="1024"
+                      data-height="768">Tablet/</a></li>
+                  <li><a href="https://shinseungyu.github.io/Hanwha-/" class="open-window" data-width="375"
+                      data-height="812">Mobile</a></li>
+                </ul>
+                <h3 class="en">Hanwha</h3>
+              </div>
+            </div>
+            <div class="project-box">
+              <a href="https://shinseungyu.github.io/Lemaire/" class="sub-img">
+                <img src="./work/img/project7.png" alt="르메르 메인 이미지">
+              </a>
+              <div class="sec3-bottom-box">
+                <ul>
+                  <li><a href="https://shinseungyu.github.io/Lemaire/" class="open-window" data-width="1920"
+                      data-height="1080">PC/</a></li>
+                  <li><a href="https://shinseungyu.github.io/Lemaire/" class="open-window" data-width="1024"
+                      data-height="768">Tablet/</a></li>
+                  <li><a href="https://shinseungyu.github.io/Lemaire/" class="open-window" data-width="375"
+                      data-height="812">Mobile</a></li>
+                </ul>
+                <h3 class="en">Lemaire2</h3>
+              </div>
+            </div>
+            <div class="project-box">
+              <a href="https://shinseungyu.github.io/polo/" class="sub-img">
+                <img src="./work/img/project1.png" alt="폴로 메인 이미지">
+              </a>
+              <div class="sec3-bottom-box">
+                <ul>
+                  <li><a href="https://shinseungyu.github.io/polo/" class="open-window" data-width="1920"
+                      data-height="1080">PC/</a></li>
+                  <li><a href="https://shinseungyu.github.io/polo/" class="open-window" data-width="1024"
+                      data-height="768">Tablet/</a></li>
+                  <li><a href="https://shinseungyu.github.io/polo/" class="open-window" data-width="375"
+                      data-height="812">Mobile</a></li>
+                </ul>
+                <h3 class="en">POLO</h3>
+              </div>
+            </div>
+            <div class="project-box">
+              <a href="https://shinseungyu.github.io/lostark/" class="sub-img">
+                <img src="./work/img/project2.png" alt="로스트아크 메인 이미지">
+              </a>
+              <div class="sec3-bottom-box">
+                <ul>
+                  <li><a href="https://shinseungyu.github.io/lostark/" class="open-window" data-width="1920"
+                      data-height="1080">PC/</a></li>
+                  <li><a href="https://shinseungyu.github.io/lostark/" class="open-window" data-width="1024"
+                      data-height="768">Tablet/</a></li>
+                  <li><a href="https://shinseungyu.github.io/lostark/" class="open-window" data-width="375"
+                      data-height="812">Mobile</a></li>
+                </ul>
+                <h3 class="en">Lost Ark</h3>
+              </div>
+            </div>
+            <div class="project-box">
+              <a href="https://shinseungyu.github.io/travel/" class="sub-img">
+                <img src="./work/img/project3.png" alt="여행어때 메인 이미지">
+              </a>
+              <div class="sec3-bottom-box">
+                <ul>
+                  <li><a href="https://shinseungyu.github.io/travel/" class="open-window" data-width="1920"
+                      data-height="1080">PC/</a></li>
+                  <li><a href="https://shinseungyu.github.io/travel/" class="open-window" data-width="1024"
+                      data-height="768">Tablet/</a></li>
+                  <li><a href="https://shinseungyu.github.io/travel/" class="open-window" data-width="375"
+                      data-height="812">Mobile</a></li>
+                </ul>
+                <h3>여행어때</h3>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section4 -->
+    <section class="section4">
+      <div class="container">
+        <div class="con1">
+          <span class="circle"></span>
+          <div class="textBox">
+            <p class="en">
+              Frontend<br>
+              Project<br>
+            </p>
+          </div>
+        </div>
+        <div class="con2">
+          <ul class="listBox">
+            <li class="box a">
+              <div class="leftBox">
+                <span class="step en">step1</span>
+                <h1 class="en">Main Page</h1>
+                <p>계획만들기를 클릭해서 질문페이지로 들어가주세요.</p>
+              </div>
+              <div class="img-con">
+                <img src="./work/img/travel1.png" alt="메인페이지 이미지">
+              </div>
+            </li>
+            <li class="box a">
+              <span class="step en">step2</span>
+              <div class="leftBox">
+                <h1 class="en">Question Page</h1>
+                <p>질문을 선택해 나만의 여행 계획을 세워보세요.</p>
+              </div>
+              <div class="img-con">
+                <img src="./work/img/travel2.png" alt="질문페이지 이미지">
+              </div>
+            </li>
+            <li class="box a">
+              <span class="step en">step3</span>
+              <div class="leftBox">
+                <h1 class="en">Result Page</h1>
+                <p>추천받은 여행지의 위치를 구글 지도에서 확인하고, 마음에 드는 장소는 장바구니에 담아보세요.</p>
+              </div>
+              <div class="img-con">
+                <img src="./work/img/travel3.png" alt="결과페이지 이미지">
+              </div>
+            </li>
+            <li class="box a">
+              <span class="step en">step4</span>
+              <div class="leftBox">
+                <h1 class="en">Storage Page</h1>
+                <p>직접 세운 계획을 한눈에 확인해 보세요.</p>
+              </div>
+              <div class="img-con">
+                <img src="./work/img/travel4.png" alt="저장페이지 이미지">
+              </div>
+            </li>
+            <li class="link box">
+              <div class="link-txt-box">
+                <p>#Design, Html, Css, JavaScript 참여율100%</p>
+                <p>#백엔드, 데이터사이언스와 협업 프로젝트</p>
+              </div>
+              <h1>여행어때 프로젝트</h1>
+              <div class="view-box">
+                <a href="https://yeohaeng.site/home/index.html" class="view">View</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-contact">
+          <h1 class="f_title">thank you for reviewing my portfolio!</h1>
+          <h3 class="en">Contact</h3>
+          <div class="footer-contact-info">
+            <p class="en">sstmddbs@naver.com</p>
+            <p class="en">010-5027-6509</p>
+          </div>
+        </div>
+        <div class="footer-navigation">
+          <h1 class="en footer-title">Site Stuff</h1>
+          <ul>
+            <li><a href="./index.html">home</a></li>
+            <li><a href="./about.html">about</a></li>
+            <li><a href="./work.html">work</a></li>
+            <li><a href="./process.html">process</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- wrap 끝 -->
+
+</body>
+
+</html>

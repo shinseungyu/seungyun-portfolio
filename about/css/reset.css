@@ -1,0 +1,45 @@
+/* pretendard */
+@import url('https://webfontworld.github.io/pretendard/Pretendard.css');
+/* playfair display*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap');
+/* inter */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* Gaegu */
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 1rem;
+  color: #222;
+  background-color: #BBBBBD;
+}
+
+img,
+svg,
+video {
+  width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+ul li {
+  list-style: none;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
