@@ -121,9 +121,9 @@ $(function () {
     }
   })
 
-    .fromTo('.section4 .con1 .circle', { 'width': '0', 'height': '0', 'duration': '10', 'ease': 'elastic', 'top': '3%.' }, {
+    .fromTo('.section4 .con1 .circle', { 'width': '0', 'height': '0', 'duration': '10', 'ease': 'elastic' }, {
       'width': '2000px',
-      'height': '2000px', 'duration': '10', 'opacity': '1', 'top': '0%'
+      'height': '2000px', 'duration': '10', 'opacity': '1'
     }, 0)
 
   gsap.timeline({

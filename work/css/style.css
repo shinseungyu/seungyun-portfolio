@@ -17,6 +17,10 @@ body.bg {
   font-family: "Playfair Display", serif;
 }
 
+.en2 {
+  font-family: 'inter', serif;
+}
+
 .section1 .title .en,
 .section2 .title .en,
 .section3 .sec3-title .en,
@@ -42,9 +46,26 @@ body.bg {
   }
 }
 
+.header_area.scroll {
+  position: fixed;
+  height: auto;
+  top: 0;
+  left: 0;
+  padding: 20px 32px;
+  animation: scroll 0.3s linear;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .header_area {
-  font-weight: 700;
-  font-family: 'inter', serif;
   position: absolute;
   top: 0;
   left: 0;
@@ -53,17 +74,17 @@ body.bg {
   height: 80px;
   background-color: transparent;
   text-transform: uppercase;
-  padding: 0 32px;
+  padding: 20px 32px;
 }
 
 .header_area .container {
+  height: 100%;
   width: 1600px;
   margin: 0 auto;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
 }
 
 .header_area .container .main_menu {
@@ -73,23 +94,16 @@ body.bg {
 .header_area .main_menu li {
   font-weight: 500;
   color: #fff;
+  margin-right: 28px;
 }
 
-.header_area .main_menu li {
-  margin-right: 8px;
-}
-
-#hamburger {
+.header_area .hamburger-box {
   display: none;
 }
 
 .header_area .logo {
   width: 60px;
   height: 50px;
-  position: absolute;
-  top: 50%;
-  right: 5%;
-  transform: translateY(-50%);
 }
 
 .header_area .main_menu a:hover {
@@ -356,6 +370,7 @@ body.bg {
   margin-right: 4px;
   color: #888;
 }
+
 .section3 .wrap-box .right-con .project-box ul li a:hover {
 
   color: #c9c9c9;
@@ -377,10 +392,9 @@ body.bg {
   border-radius: 50%;
   position: absolute;
   background-color: #222;
-  top: 40%;
+  top: 20%;
   left: 50%;
   transform: translateX(-50%);
-
 }
 
 .section4 .con1 .textBox .en {
@@ -411,25 +425,25 @@ body.bg {
   border: 1px solid #222;
   border-radius: 15px;
   margin-bottom: 20px;
-  position: relative;
   position: sticky;
   background-color: #fff;
   top: 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: -16px;
+  height: 500px;
 }
 
 .section4 .con2 .listBox .box .img-con {
-  height: 350px;
+  height: 100%;
   width: 40%;
   border-radius: 30px;
+
 }
 
 .section4 .con2 .listBox .box .img-con img {
-  height: 350px;
   border-radius: 15px;
+  height: 100%;
 }
 
 .section4 .con2 .listBox .box .leftBox {
@@ -466,7 +480,6 @@ body.bg {
 
 .section4 .link {
   width: 80.20vw;
-  height: 20vw;
   color: #fff;
   background-color: #81D4FA !important;
   flex-direction: column;
@@ -513,24 +526,17 @@ body.bg {
   margin-bottom: 8px;
 }
 
-.footer .footer-contact .footer-contact-info {
-  display: flex;
-}
-
-.footer .footer-contact p {
-  display: inline-block;
-  font-size: clamp(13px, 1.25vw, 24px);
-  background-color: #C9C9C9;
-  margin-right: 8px;
-  border-radius: 30px;
-  padding: 4px 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .footer .footer-navigation .en {
   font-size: clamp(12px, 2.5vw, 70px);
+}
+
+.footer .footer-contact-second {
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-contact-second>p {
+  margin-left: 16px;
 }
 
 .footer .footer-navigation .footer-title {
@@ -551,6 +557,8 @@ body.bg {
 .footer .footer-navigation ul li a:hover {
   color: #81D4FA;
 }
+
+
 
 @media (max-width: 1800px) {
 
@@ -599,10 +607,20 @@ body.bg {
     margin-right: 0;
   }
 
+  .header_area .hamburger-box {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1%;
+    display: block;
+  }
+
   #hamburger {
     display: block;
     width: 20px;
     height: 10px;
+    position: absolute;
+    right: 0;
     position: relative;
     z-index: 99999;
   }
@@ -721,8 +739,11 @@ body.bg {
   }
 
   .section4 .con2 .listBox .box {
+    height: auto;
     position: static;
     position: relative;
+    padding: 16px 32px;
+    margin-right: 0;
   }
 
   .section4 .con2 .listBox .view {
@@ -732,12 +753,6 @@ body.bg {
   .section4 .con2 .listBox .box h2 {
     margin-bottom: 8px;
   }
-
-  .section4 .con2 .listBox .box {
-    padding: 16px 32px;
-    margin-right: 0;
-  }
-
 
   .section4 .link {
     height: auto;
@@ -898,15 +913,17 @@ body.bg {
   }
 
   .footer .container {
-    padding: 64px 16px;
+    padding: 32px 16px;
   }
 
-  .footer .footer-contact-info p {
-    margin-bottom: 4px;
+  .footer .footer-contact-second>p {
+    margin-left: 0;
+    font-size: 0.75rem;
   }
 
-  .footer .footer-contact-info {
+  .footer .footer-contact-second {
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 

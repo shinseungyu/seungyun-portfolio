@@ -5,7 +5,7 @@
 }
 
 .wrap {
-  
+
   overflow: hidden;
 }
 
@@ -83,6 +83,8 @@ body {
 .header_area.scroll {
   position: fixed;
   height: auto;
+  top: 0;
+  left: 0;
   padding: 20px 32px;
   animation: scroll 0.3s linear;
 }
@@ -107,17 +109,17 @@ body {
   background-color: transparent;
   text-transform: uppercase;
   font-size: 0.75rem;
-  padding: 0 32px;
+  padding: 20px 32px;
 }
 
 .header_area .container {
+  height: 100%;
   width: 1600px;
   margin: 0 auto;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
 }
 
 .header_area .container .main_menu {
@@ -127,23 +129,16 @@ body {
 .header_area .main_menu li {
   font-weight: 500;
   color: #fff;
+  margin-right: 28px;
 }
 
-.header_area .main_menu li {
-  margin-right: 8px;
-}
-
-#hamburger {
+.header_area .hamburger-box {
   display: none;
 }
 
 .header_area .logo {
   width: 60px;
   height: 50px;
-  position: absolute;
-  top: 50%;
-  right: 5%;
-  transform: translateY(-50%);
 }
 
 .header_area .main_menu a:hover {
@@ -162,7 +157,7 @@ body {
   height: 100%;
   align-items: center;
   justify-content: center;
-  opacity: 0;
+  opacity: 0.3;
   margin: 0 auto;
   text-align: center;
 }
@@ -309,16 +304,24 @@ body {
 
 .section3 .container .tab_inner .box {
   width: 160px;
-  height: 130px;
-  z-index: 1;
+  height: 135px;
+  background-color: #c9c9c9c9;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
   position: absolute;
   filter: grayscale(1);
+  z-index: 1;
+  cursor: pointer;
 }
 
 .section3 .container .tab_inner .box img {
-  width: 160px;
-  height: 130px;
-  border: 6px solid black;
+  width: 97%;
+  height: 97%;
+  object-fit: cover;
+  border-radius: 15px;
 }
 
 .section3 .tab3_wrap ul {
@@ -388,7 +391,7 @@ body {
 .section3 .tabs .con .tab-txt {
   width: 300px;
   position: absolute;
-  left: 120%;
+  left: 1300%;
   top: 30%;
 }
 
@@ -440,6 +443,7 @@ body {
 
 .section3 .tabs #tab4 .tab-txt p {
   margin-bottom: 4px;
+  line-height: 1.4;
 }
 
 .section3 #tab4 .tab-txt-con2 p:nth-child(2) {
@@ -648,24 +652,17 @@ body {
   margin-bottom: 8px;
 }
 
-.footer .footer-contact .footer-contact-info {
-  display: flex;
-}
-
-.footer .footer-contact p {
-  display: inline-block;
-  font-size: clamp(13px, 1.25vw, 24px);
-  background-color: #C9C9C9;
-  margin-right: 8px;
-  border-radius: 30px;
-  padding: 4px 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .footer .footer-navigation .en {
   font-size: clamp(12px, 2.5vw, 70px);
+}
+
+.footer .footer-contact-second {
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-contact-second>p {
+  margin-left: 16px;
 }
 
 .footer .footer-navigation .footer-title {
@@ -718,10 +715,20 @@ body {
     transition: 0.3s;
   }
 
+  .header_area .hamburger-box {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1%;
+    display: block;
+  }
+
   #hamburger {
     display: block;
     width: 20px;
     height: 10px;
+    position: absolute;
+    right: 0;
     position: relative;
     z-index: 99999;
   }
@@ -735,7 +742,7 @@ body {
   }
 
   #hamburger span:first-child {
-    top: 50%;
+    top: 0;
     left: 0;
   }
 
@@ -763,13 +770,13 @@ body {
     width: 100%;
   }
 
-  .footer .container {
-    padding: 200px 60px;
-  }
-
   .section4 .swiper {
     width: 80%;
     height: 600px;
+  }
+
+  .footer .container {
+    padding: 200px 60px;
   }
 }
 
@@ -869,38 +876,34 @@ body {
     font-size: 1.5rem;
   }
 
-  .section3 .container .tab_inner .box img {
-    width: 140px;
-    height: 90px;
-    border: 3px solid black;
-  }
+
 
   .section3 .container .tab_inner .tab-img1 {
-    top: 3%;
+    top: -10%;
     left: -8%;
     transform: rotate(10deg);
   }
 
   .section3 .container .tab_inner .tab-img2 {
-    top: 23%;
+    top: 15%;
     left: -8%;
     transform: rotate(-2deg);
   }
 
   .section3 .container .tab_inner .tab-img3 {
-    top: 43%;
+    top: 40%;
     left: -8%;
     transform: rotate(-2deg);
   }
 
   .section3 .container .tab_inner .tab-img4 {
-    top: 63%;
+    top: 67%;
     left: -8%;
     transform: rotate(10deg);
   }
 
   .section3 .container .tab_inner .tab-img5 {
-    top: 83%;
+    top: 93%;
     left: -8%;
     transform: rotate(-2deg);
   }
@@ -975,12 +978,9 @@ body {
   }
 
   .section5 .btnWrap {
-
     right: 14%;
     top: 95%;
-
   }
-
 
   /* footer */
   .footer .container {
@@ -1083,33 +1083,28 @@ body {
     display: block;
   }
 
-  .section3 .container .tab_inner .box img {
-    width: 80px;
-    height: 60px;
-  }
-
   .section3 .container .tab_inner .tab-img1 {
-    top: 3%;
+    top: -5%;
     left: -8%;
   }
 
   .section3 .container .tab_inner .tab-img2 {
-    top: 20%;
+    top: 17%;
     left: -8%;
   }
 
   .section3 .container .tab_inner .tab-img3 {
-    top: 37%;
+    top: 40%;
     left: -8%;
   }
 
   .section3 .container .tab_inner .tab-img4 {
-    top: 57%;
+    top: 63%;
     left: -8%;
   }
 
   .section3 .container .tab_inner .tab-img5 {
-    top: 75%;
+    top: 85%;
     left: -8%;
   }
 
@@ -1167,6 +1162,11 @@ body {
     margin-top: 0;
   }
 
+  .section3 .container .tab_inner .box {
+    width: 100px;
+    height: 80px;
+  }
+
   .section4 .swiper {
     width: 100%;
     height: 300px;
@@ -1176,19 +1176,20 @@ body {
     padding: 32px 16px;
   }
 
-  .footer .footer-contact p {
-    margin-right: 0;
-    margin-bottom: 4px;
+  .footer .footer-contact-second>p {
+    margin-left: 0;
+    font-size: 0.75rem;
   }
 
-  .footer .footer-contact-info {
+  .footer .footer-contact-second {
     flex-direction: column;
+    align-items: flex-start;
   }
+
 }
 
 @media (max-width: 376px) {
   .section1 .textLoop {
-
     top: 30%;
     transform: translateY(-30%);
   }
@@ -1328,28 +1329,33 @@ body {
   }
 
   .section3 .container .tab_inner .tab-img1 {
-    top: 3%;
+    top: -5%;
     left: -3%;
   }
 
   .section3 .container .tab_inner .tab-img2 {
-    top: 24%;
+    top: 18%;
     left: -3%;
   }
 
   .section3 .container .tab_inner .tab-img3 {
-    top: 45%;
+    top: 41%;
     left: -3%;
   }
 
   .section3 .container .tab_inner .tab-img4 {
-    top: 70%;
+    top: 64%;
     left: -3%;
   }
 
   .section3 .container .tab_inner .tab-img5 {
-    top: 90%;
+    top: 87%;
     left: -3%;
+  }
+
+  .section3 .container .tab_inner .box {
+    width: 90px;
+    height: 70px;
   }
 
   .section4 .swiper .swiper-slide .po_title {
