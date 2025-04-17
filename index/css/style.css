@@ -929,7 +929,7 @@ body {
   .section5 ul {
     padding: 0% 5%;
     justify-content: space-between;
-    gap: 8px;
+    margin-right: -8px;
   }
 
   .section5 .counter {
@@ -938,9 +938,14 @@ body {
 
   .section5 ul li {
     padding: 0;
-    width: 49%;
+    width: calc(50% - 8px);
     margin-top: 150px;
     margin-bottom: 16px;
+    height: 450px;
+  }
+
+  .section5 ul li a .imgBox img {
+    height: 450px;
   }
 
   .section5 ul li a .imgBox {
@@ -953,6 +958,7 @@ body {
 
   .section5 ul {
     flex-wrap: wrap;
+    margin: -8px;
   }
 
   .section5 ul li a .textBox {

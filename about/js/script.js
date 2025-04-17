@@ -89,7 +89,7 @@ $(function () {
 
   // section3 가로스크롤
   ScrollTrigger.matchMedia({
-    "(min-width: 1024px)": function () {
+    "(min-width: 1025px)": function () {
 
       let list = gsap.utils.toArray('.section3 .list li');
       let listA = gsap.utils.toArray('.section3 .list .a');
