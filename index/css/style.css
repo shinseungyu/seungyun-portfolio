@@ -305,7 +305,7 @@ body {
 .section3 .container .tab_inner .box {
   width: 160px;
   height: 135px;
-  background-color: #c9c9c9c9;
+
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -318,8 +318,8 @@ body {
 }
 
 .section3 .container .tab_inner .box img {
-  width: 97%;
-  height: 97%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 15px;
 }
@@ -333,38 +333,38 @@ body {
   margin-top: 12px;
 }
 
-.section3 .container .tab_inner .tab-img1 {
-  top: 30%;
-  left: -20%;
-  transform: rotate(-6deg);
-}
-
 .section3 .tabs #tab2 .tab-txt p {
   width: 80%;
   margin-top: 16px;
 }
 
+.section3 .container .tab_inner .tab-img1 {
+  top: 28%;
+  left: -20%;
+  transform: rotate(-6deg);
+}
+
 .section3 .container .tab_inner .tab-img2 {
-  top: 55%;
+  top: 53%;
   left: -20%;
   transform: rotate(6deg);
 }
 
 .section3 .container .tab_inner .tab-img3 {
-  top: 78%;
+  top: 77%;
   left: -18%;
   transform: rotate(7deg);
 }
 
 .section3 .container .tab_inner .tab-img4 {
-  top: 60%;
-  right: -17%;
+  top: 48%;
+  right: -22%;
   transform: rotate(4deg);
 }
 
 .section3 .container .tab_inner .tab-img5 {
-  top: 83%;
-  right: -17%;
+  top: 75%;
+  right: -22%;
   transform: rotate(-2deg);
 }
 
@@ -673,6 +673,11 @@ body {
   display: flex;
   margin-top: 40px;
   margin-right: -12px;
+}
+
+.footer .footer-contact-number h1 {
+  font-size: clamp(20px, 4.5vw, 100px);
+  margin-top: 4px;
 }
 
 .footer .footer-navigation ul li {

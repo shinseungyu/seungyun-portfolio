@@ -460,6 +460,11 @@ body {
   color: #81D4FA;
 }
 
+.footer .footer-contact-number h1 {
+  font-size: clamp(20px, 4.5vw, 100px);
+  margin-top: 4px;
+}
+
 .footer .footer-navigation ul {
   display: flex;
   margin-top: 40px;
