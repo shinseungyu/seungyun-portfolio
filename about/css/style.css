@@ -24,6 +24,8 @@
   font-weight: 500;
 }
 
+/* header  */
+
 .header_area.scroll {
   position: fixed;
   height: auto;
@@ -41,7 +43,6 @@
   }
 }
 
-/* header  */
 .header_area.scroll {
   position: fixed;
   height: auto;

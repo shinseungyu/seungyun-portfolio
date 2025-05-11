@@ -1,7 +1,6 @@
 
 $(document).on('click', 'a[href="#"]', function (e) { e.preventDefault(); })
 $(function () {
-
   const $menuBtn = $('#hamburger');
   const $mainMenu = $('.main_menu');
 
@@ -25,7 +24,6 @@ $(function () {
   });
   // gsap 등록
   gsap.registerPlugin(ScrollTrigger)
-
   // section1
   // 01 스크롤될때 고정이되면서 h1이 투명했다가 나타나게
   gsap.timeline({
@@ -52,7 +50,8 @@ $(function () {
   // 슬라이드 함수 호출
   setInterval(slide, 4000);
   // section2
-  gsap.fromTo('.textBox .mask span', {
+  gsap.fromTo('.textBox .mask span', 
+    {
     'background-size': '0% 100%'
   }, {
     'background-size': '100% 100%',

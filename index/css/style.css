@@ -391,7 +391,7 @@ body {
 .section3 .tabs .con .tab-txt {
   width: 300px;
   position: absolute;
-  left: 1300%;
+  left: 130%;
   top: 30%;
 }
 
@@ -521,6 +521,14 @@ body {
 
 .section4 .txt-wrap span {
   font-weight: 700;
+}
+
+.section4 .con2 .listBox .box .qpage {
+  width: 100px;
+  height: 50px;
+  border-radius: 15px;
+  border: 1px solid black;
+  font-size: 300px;
 }
 
 /* section5 */
@@ -792,11 +800,13 @@ body {
 
   .section1 .container .right-txt-box ul li h1 {
     font-size: 2rem;
+
   }
 
   .section1 .container .right-txt-box ul li {
     height: 100px;
     width: 250px;
+    margin-left: 0;
   }
 
   .section1 .container .right-txt-box {
@@ -1019,6 +1029,7 @@ body {
   .section1 .container .right-txt-box ul li {
     height: 70px;
     width: 150px;
+
   }
 
   .section1 .container .right-txt-box ul li h1 {
@@ -1070,8 +1081,13 @@ body {
 
   .section5 ul li {
     width: 100%;
-    margin-top: 0;
+    margin: 32px 0;
+    height: auto;
     margin-bottom: 30px;
+  }
+
+  .section5 ul li a .imgBox img {
+    height: auto;
   }
 }
 
@@ -1201,29 +1217,35 @@ body {
 
 @media (max-width: 376px) {
   .section1 .textLoop {
-    top: 30%;
-    transform: translateY(-30%);
+    top: 28%;
+    transform: translateY(-28%);
   }
 
   .section3 .btnWrap {
-    right: 0%;
-    top: 87%;
+    right: -5%;
+    top: 89%;
   }
 
   .section4 .btnWrap {
     top: 89%;
+    right: -5%;
+  }
+
+  .section5 .btnWrap {
+    top: 98%;
+    right: -5%;
   }
 
   .section2 .container,
   .section3 .container,
   .section4 .container,
   .section5 .container {
-    padding: 100px 0;
+    padding: 100px 8px;
   }
 
   .section1 .slide2 {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
 
   .section1 .container .right-txt-box ul li {
@@ -1237,7 +1259,7 @@ body {
   }
 
   .section1 .container .right-txt-box ul {
-    height: 120px;
+    height: 100px;
   }
 
   .section1 .container .left-txt-box h1 {

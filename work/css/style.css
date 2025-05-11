@@ -181,15 +181,6 @@ body.bg {
   padding: 160px 0;
 }
 
-.section2 .main-box .top-box {
-  background: url(../img/teamproject1.png) no-repeat center/cover;
-  height: 330px;
-  width: 100%;
-  border-radius: 30px;
-  padding: 40px 16px 80px 80px;
-  color: #fff;
-}
-
 .section2 .main-box .top-box .uiux-logo {
   width: 80px;
   height: 80px;
@@ -220,17 +211,26 @@ body.bg {
   margin-top: 32px;
 }
 
+.section2 .main-box .top-box {
+  background: url(../img/teamproject1.png) no-repeat center/cover;
+  height: 330px;
+  width: 100%;
+  border-radius: 30px;
+  padding: 40px 16px 80px 80px;
+  color: #fff;
+}
+
 .section2 .middle-box .middle-left {
   width: 50%;
   margin-right: 32px;
-  background: url(../img/teamproject2.png)no-repeat center/cover;
+  background: url(../img/teamproject2.svg)no-repeat center/cover;
   height: 330px;
   border-radius: 30px;
 }
 
 .section2 .middle-box .middle-right {
   width: 50%;
-  background: url(../img/teamproject3.png)no-repeat center/cover;
+  background: url(../img/teamproject3.svg)no-repeat center/cover;
   height: 330px;
   border-radius: 30px;
 }
@@ -418,6 +418,18 @@ body.bg {
   position: relative;
   width: 80%;
   margin: 0 auto;
+}
+
+.section4 .con2 .listBox .box .qpage {
+  width: 70px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 500;
+  margin-top: 8px;
 }
 
 .section4 .con2 .listBox .box {
@@ -933,7 +945,7 @@ body.bg {
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 375px) {
   .section3 .container .wrap-box .left-con .left-txt h1 {
     font-size: 2.5rem;
   }
